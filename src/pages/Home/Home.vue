@@ -1,17 +1,19 @@
 <template>
   <div>
-    <div class="home">home</div>
-    <router-link to="/list" class="home">列表页</router-link>
+    <home-header></home-header>
   </div>
 </template>
 
 <script>
+import HomeHeader from './components/Header.vue'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    HomeHeader
+  }
 }
 </script>
-<style>
-.home{
-  font-size: 50px
-}
+<style lang="stylus" scoped>
+
 </style>
