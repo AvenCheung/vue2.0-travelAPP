@@ -1,14 +1,14 @@
 <template>
   <div class="header">
     <div class="header-left">
-      <span class="iconfont">&#xe624;</span>
+      <div class="iconfont back-icon">&#xe624;</div>
     </div>
     <div class="header-input">
       <span class="iconfont">&#xe632;</span>
       输入城市/景点/游玩主题</div>
     <div class="header-right">
       城市
-      <span class="iconfont">&#xe64a;</span>
+      <span class="iconfont arrow-icon">&#xe64a;</span>
     </div>
   </div>
 </template>
@@ -19,15 +19,19 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+@import '~styles/varibles.styl'
 .header
   display flex
   line-height .85rem
-  background #00bcd0
+  background $bgcolor
   color #fff
 
 .header-left
   width .64rem
   float left
+  .back-icon
+    text-align center
+    font-size .4rem
 
 // 搜索框
 .header-input
@@ -37,6 +41,7 @@ export default {
   line-height .64rem
   margin-top .12rem
   margin-left .2rem
+  padding-left .2rem
   background-color #ffffff
   border-radius .1rem
 
@@ -44,5 +49,8 @@ export default {
   width 1.24rem
   float right
   text-align center
+  .arrow-icon
+    margin-left -.04rem
+    font-size .24rem
 
 </style>
