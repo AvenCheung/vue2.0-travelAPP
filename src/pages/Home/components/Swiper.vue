@@ -24,7 +24,7 @@ export default {
       swiperList: [
         {
           id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg'
+          imgUrl: 'http://img1.qunarzz.com/sight/source/1508/f8/cadd4e229d3402.jpg_r_640x214_c38fb221.jpg'
         }, {
           id: '0002',
           imgUrl: 'http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg'
@@ -38,13 +38,14 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+// >>>是指穿透样式，如果加上这个的话就不受限于scoped
 .wrapper >>> .swiper-pagination-bullet-active
-  background #ffffff
+  background #fff
 .wrapper
   overflow hidden
   width 100%
   height 0
-  padding-bottom 31.25%
+  padding-bottom 37.2%
   background #eee
   .swiper-img
     width 100%
