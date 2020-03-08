@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <!-- 因为宽和高都是定死的，所以这个外层包裹盒子就没用处 -->
         <!-- <div class="item-img-wrapper"> -->
           <img class="item-img" :src="item.imgUrl" />
@@ -20,30 +20,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1912/62/6203253b6ea0d27ea3.img.jpg_200x200_327e7c03.jpg',
-        title: '美的鹭湖探索王国',
-        desc: '丰富有趣的奇妙世界，迷失在自己的王国'
-      }, {
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1912/62/6203253b6ea0d27ea3.img.jpg_200x200_327e7c03.jpg',
-        title: '美的鹭湖探索王国',
-        desc: '丰富有趣的奇妙世界，迷失在自己的王国'
-      }, {
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1912/62/6203253b6ea0d27ea3.img.jpg_200x200_327e7c03.jpg',
-        title: '美的鹭湖探索王国',
-        desc: '丰富有趣的奇妙世界，迷失在自己的王国'
-      }, {
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1912/62/6203253b6ea0d27ea3.img.jpg_200x200_327e7c03.jpg',
-        title: '美的鹭湖探索王国',
-        desc: '丰富有趣的奇妙世界，迷失在自己的王国'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
