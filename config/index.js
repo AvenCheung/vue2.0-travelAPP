@@ -11,7 +11,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      // 当请求api这个目录的时候把请求转发到当前的服务端号
+      // 请求api这个目录的把请求转发到当前的服务端号
       '/api': {
         target: 'http://localhost:8080',
         // 替换路径
