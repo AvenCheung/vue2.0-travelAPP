@@ -1,8 +1,9 @@
 # vue2.0-travel
 
-> A Vue.js project
+## 技术栈 vue + vue-router + axios + vuex
 
-> 技术栈 vue + vue-router + axios + vuex
+
+> A Vue.js project
 
 ## Build Setup
 
@@ -22,7 +23,8 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-> 项目目录结构
+## 项目目录结构
+***
 ```
 vue2.0-travel
 ├── build
